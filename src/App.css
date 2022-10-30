@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +13,113 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-bar {
+  width: 550px;
+  margin: 2% auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.search-bar input:focus {
+  box-shadow: none;
+}
+
+.celebrity-list {
+  max-width: 600px;
+  margin: 0 auto;
+  border: none;
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.profile-img {
+  border: 2px solid rgba(0, 0, 0, 0.199);
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.list-group-item {
+  border-radius: 40px !important;
+  border: 2px solid rgba(0, 0, 0, 0.199) !important;
+  margin-bottom: 5px;
+}
+.accordion-button {
+  background-color: white !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #212529;
+}
+
+.accordian-body {
+  display: flex;
+  width: 500px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accordian-header button {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.basic-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.age,
+.gender,
+.country,
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: grey;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.age span,
+.gender span,
+.country span,
+.description span {
+  color: #212529;
+  margin-top: 4px;
+}
+
+.gender {
+  text-transform: capitalize;
+}
+
+.description span {
+  text-align: left;
+}
+
+.modal-footer,
+.modal-header {
+  border: none !important;
+}
+
+@media (max-width: 600px) {
+  .celebrity-list {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .accordian-body {
+    width: 90%;
+  }
+
+  .search-bar {
+    width: 90%;
   }
 }
